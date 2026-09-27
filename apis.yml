@@ -1,23 +1,52 @@
 aid: bcmaterial-china
+
 name: Bcmaterial China
-description: 'Bcmaterial China is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bcmaterial China is a Chinese materials supplier company. It appears in secondary-market harvests and currently lacks a publicly documented API. The company likely deals with construction and decorative materials, but no official website or API documentation could be located through standard web searches. This stub will be enriched as more information becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bcmaterial-china/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- Materials
+- Supplier
+- China
+- Construction
+- Decorative
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bcmaterial-china-hosts.yml
+- type: Vendors
+  url: vendors/bcmaterial-china-vendors.yml
+- type: DomainSecurity
+  url: security/bcmaterial-china-domain-security.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
